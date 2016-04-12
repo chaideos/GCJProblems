@@ -9,6 +9,10 @@ import java.util.Scanner;
 
 public class AlienLanguage {
 
+	// The trick to solve this problem is to
+	// 1. Parse the tokens under the '(' and then compare them
+	// character by character with the words already present in the
+	// dictionary.
 	public int matchesCount(String word, List<String> words, int L) {
 		int i = 0, k = 0;
 		List<Character> tokens = new ArrayList<>();
